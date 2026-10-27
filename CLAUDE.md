@@ -19,7 +19,15 @@ npm run generate:words             # regenerate src/data/words.ts
 npx shadcn@latest add <component> -y < /dev/null   # add a shadcn component non-interactively
 ```
 
-On this machine, Node is installed at `C:\Program Files\nodejs`, and shells started before installation may not have it on PATH. In Git Bash, prefix commands with `export PATH="/c/Program Files/nodejs:$PATH";`.
+On this machine, Node is installed at `C:\Program Files\nodejs`, and shells started before installation may not have it on PATH. In Git Bash, prefix commands with `export PATH="/c/Program Files/nodejs:$PATH";`. The GitHub CLI is at `C:\Program Files\GitHub CLI\gh.exe` and may not be on PATH either.
+
+## Repository and deployment
+
+- The repo is `damsz42/kalima` on GitHub (public), default branch `main`. The user also works from the Claude Code cloud/iPhone app, which pushes `claude/*` branches and opens PRs. Run `git pull` before working locally.
+- Every push to `main` runs `.github/workflows/deploy.yml`: `npm ci`, `npm test`, `npm run build`, then publishes `dist/` to GitHub Pages at https://damsz42.github.io/kalima/. A failing test blocks the deploy.
+- The site lives in a subfolder, so `vite.config.ts` sets `base: './'`. Root-absolute paths in `index.html` (`/favicon.svg`…) are rewritten by Vite at build time, but paths in app code are not: reference public assets through `import.meta.env.BASE_URL` or imports, never a hard-coded `/…`.
+- The app is installable on iPhone via Safari's "Sur l'écran d'accueil": `index.html` holds the `apple-mobile-web-app-*` meta tags and `public/manifest.webmanifest`. iOS ignores SVG icons, hence `public/apple-touch-icon.png` (180×180). There is no service worker, so the app needs a connection.
+- Progress stays per browser (`localStorage`): the PC and the iPhone do not share a streak.
 
 ## Architecture
 

@@ -1,0 +1,272 @@
+[
+  {"lemma": "اللَّه", "ref": "112:1", "arabic": "اللَّه", "translit": "Allāh", "meaning": "Allah (Dieu)", "kind": "proper", "note": "Le mot le plus fréquent du Coran. On le trouve dès le premier verset : « Bismi-llāh ».", "senses": [
+    {"meaning": "Allah, le nom propre de Dieu", "ref": "112:1", "fr": "Allah", "en": "Allah"}
+  ]},
+  {"lemma": "قالَ", "ref": "20:49", "arabic": "قَالَ", "translit": "qāla", "meaning": "il a dit ; dire", "kind": "verb", "note": "Inaccompli : يَقُولُ yaqūlu (il dit). L'impératif قُلْ qul (dis !) ouvre de nombreuses sourates.", "senses": [
+    {"meaning": "dire", "ref": "20:49", "fr": "dit", "en": "said"},
+    {"meaning": "se dire, penser en soi-même", "ref": "58:8", "fr": "disent en eux-mêmes", "en": "among themselves", "note": "Avec « fī anfusihim » (en eux-mêmes), la parole reste intérieure."}
+  ]},
+  {"lemma": "كانَ", "ref": "20:35", "arabic": "كَانَ", "translit": "kāna", "meaning": "il était ; être", "kind": "verb", "note": "Souvent utilisé pour décrire un état permanent : « kāna-llāhu ʿalīman » (Allah est Omniscient).", "senses": [
+    {"meaning": "était (passé)", "ref": "19:28", "fr": "était", "en": "was"},
+    {"meaning": "est, de tout temps (attribut d'Allah)", "ref": "4:96", "fr": "Allah est", "en": "Allah is", "note": "Avec un attribut divin, kāna n'indique pas un passé révolu mais une qualité permanente."},
+    {"meaning": "devenir", "ref": "56:6", "fr": "deviendront", "en": "become", "tafsir": "فصارت", "note": "Le Tafsir Muyassar l'explique par ṣārat : « elles devinrent »."}
+  ]},
+  {"lemma": "رَبّ", "ref": "1:2", "arabic": "رَبّ", "translit": "rabb", "meaning": "Seigneur, Maître", "kind": "noun", "note": "Évoque celui qui élève, entretient et prend soin. « Rabbi l-ʿālamīn » : Seigneur des mondes.", "senses": [
+    {"meaning": "Seigneur (Allah)", "ref": "1:2", "fr": "Seigneur", "en": "Lord"},
+    {"meaning": "maître (d'un homme)", "ref": "12:42", "fr": "maître", "en": "master", "tafsir": "سيِّدك الملك", "note": "Joseph parle ici du roi, le maître de son codétenu."},
+    {"meaning": "faux seigneurs (pluriel arbāb)", "ref": "3:64", "fr": "seigneurs", "en": "lords", "tafsir": "يدين بعضنا لبعض بالطاعة", "note": "Prendre des hommes pour « seigneurs », c'est leur obéir à la place d'Allah."}
+  ]},
+  {"lemma": "آمَنَ", "ref": "7:121", "arabic": "آمَنَ", "translit": "āmana", "meaning": "il a cru ; croire (avoir la foi)", "kind": "verb", "note": "Même racine que أَمْن amn (sécurité) et مُؤْمِن muʾmin (croyant) : la foi rassure.", "senses": [
+    {"meaning": "croire, avoir la foi", "ref": "2:285", "fr": "cru", "en": "believed"},
+    {"meaning": "croire quelqu'un, lui faire confiance", "ref": "9:61", "fr": "confiance", "en": "believes the believers", "tafsir": "ويصدق المؤمنين"},
+    {"meaning": "mettre en sécurité", "ref": "106:4", "fr": "rassur", "en": "safe", "tafsir": "وآمنهم من فزع", "note": "Même racine que amn, la sécurité."}
+  ]},
+  {"lemma": "يَوْم", "ref": "1:4", "arabic": "يَوْم", "translit": "yawm", "meaning": "jour", "kind": "noun", "note": "Pluriel : أَيَّام ayyām. « Yawm ad-dīn » : le Jour de la Rétribution.", "senses": [
+    {"meaning": "jour", "ref": "2:184", "fr": "jours", "en": "days"},
+    {"meaning": "période, durée immense", "ref": "32:5", "fr": "mille ans", "en": "thousand years", "note": "Un « jour » auprès d'Allah peut équivaloir à mille de nos années."},
+    {"meaning": "le Jour du Jugement", "ref": "1:4", "fr": "Jour de la Rétribution", "en": "Day of Recompense"}
+  ]},
+  {"lemma": "أَرْض", "ref": "51:20", "arabic": "أَرْض", "translit": "arḍ", "meaning": "terre", "kind": "noun", "note": "Souvent associée à السَّمَاوَات as-samāwāt (les cieux) : « les cieux et la terre ».", "senses": [
+    {"meaning": "la Terre (création)", "ref": "2:29", "fr": "terre", "en": "earth"},
+    {"meaning": "un pays, un territoire", "ref": "5:21", "fr": "terre sainte", "en": "Holy Land", "tafsir": "بيت المقدس"},
+    {"meaning": "le sol (qui reprend vie)", "ref": "22:5", "fr": "terre desséchée", "en": "earth barren"}
+  ]},
+  {"lemma": "قَوْم", "ref": "15:62", "arabic": "قَوْم", "translit": "qawm", "meaning": "peuple", "kind": "noun", "note": "Les prophètes s'adressent souvent aux leurs par « yā qawmi » : ô mon peuple !", "senses": [
+    {"meaning": "peuple", "ref": "7:59", "fr": "peuple", "en": "people"},
+    {"meaning": "groupe de personnes", "ref": "49:11", "fr": "groupe", "en": "people"}
+  ]},
+  {"lemma": "عَلِمَ", "ref": "96:5", "arabic": "عَلِمَ", "translit": "ʿalima", "meaning": "il a su ; savoir, connaître", "kind": "verb", "note": "Inaccompli : يَعْلَمُ yaʿlamu. La racine ع ل م donne aussi عِلْم (science) et عَلِيم (Omniscient).", "senses": [
+    {"meaning": "savoir", "ref": "2:60", "fr": "sut", "en": "knew"},
+    {"meaning": "savoir (ce qu'on ignorait)", "ref": "96:5", "fr": "ne savait pas", "en": "knew not"}
+  ]},
+  {"lemma": "آيَة", "ref": "26:2", "arabic": "آيَة", "translit": "āya", "meaning": "signe ; verset", "kind": "noun", "note": "Pluriel : آيَات āyāt. Un verset du Coran est appelé un « signe ».", "senses": [
+    {"meaning": "signe (dans la création)", "ref": "30:21", "fr": "signes", "en": "signs", "tafsir": "آياته الدالة"},
+    {"meaning": "verset du Coran", "ref": "2:106", "fr": "verset", "en": "verse"},
+    {"meaning": "miracle, preuve", "ref": "7:73", "fr": "signe", "en": "sign", "tafsir": "بالبرهان", "note": "La chamelle de Ṣāliḥ était une preuve de sa mission."}
+  ]},
+  {"lemma": "جَعَلَ", "ref": "78:10", "arabic": "جَعَلَ", "translit": "jaʿala", "meaning": "il a fait, rendu, placé", "kind": "verb", "note": "Exprime la transformation : faire de quelque chose autre chose (« Nous avons fait de la nuit un vêtement »).", "senses": [
+    {"meaning": "faire de… (transformer)", "ref": "2:22", "fr": "fait la terre pour lit", "en": "made for you the earth"},
+    {"meaning": "établir, désigner", "ref": "2:30", "fr": "établir", "en": "place"},
+    {"meaning": "mettre, placer", "ref": "2:19", "fr": "mettent", "en": "put their fingers", "tafsir": "يضعون أصابعهم"}
+  ]},
+  {"lemma": "رَسُول", "ref": "26:107", "arabic": "رَسُول", "translit": "rasūl", "meaning": "messager", "kind": "noun", "note": "Pluriel : رُسُل rusul. Même racine que أَرْسَلَ arsala (envoyer) et رِسَالَة risāla (message).", "senses": [
+    {"meaning": "Messager d'Allah", "ref": "48:29", "fr": "Messager", "en": "Messenger"},
+    {"meaning": "émissaire (d'un homme)", "ref": "12:50", "fr": "émissaire", "en": "messenger", "tafsir": "رسول الملك", "note": "Il s'agit de l'envoyé du roi d'Égypte auprès de Joseph."},
+    {"meaning": "ange messager (Gabriel)", "ref": "81:19", "fr": "Messager", "en": "messenger", "tafsir": "جبريل"}
+  ]},
+  {"lemma": "عَذاب", "ref": "52:7", "arabic": "عَذَاب", "translit": "ʿadhāb", "meaning": "châtiment", "kind": "noun", "note": "Souvent qualifié : عَذَابٌ أَلِيم ʿadhābun alīm (un châtiment douloureux).", "senses": [
+    {"meaning": "châtiment de l'au-delà", "ref": "2:7", "fr": "châtiment", "en": "punishment"},
+    {"meaning": "épreuve, châtiment ici-bas", "ref": "32:21", "fr": "châtiment", "en": "punishment", "tafsir": "في الدنيا", "note": "Le « châtiment inférieur » désigne les épreuves de ce monde, avant le grand châtiment."},
+    {"meaning": "peine légale", "ref": "24:2", "fr": "punition", "en": "punishment", "tafsir": "وليحضر العقوبةَ"}
+  ]},
+  {"lemma": "سَماء", "ref": "55:7", "arabic": "سَمَاء", "translit": "samāʾ", "meaning": "ciel", "kind": "noun", "note": "Pluriel : سَمَاوَات samāwāt. La racine س م و évoque l'élévation.", "senses": [
+    {"meaning": "ciel", "ref": "2:22", "fr": "ciel", "en": "sky"},
+    {"meaning": "pluie", "ref": "6:6", "fr": "pluie", "en": "rain", "tafsir": "بإنزال الأمطار"}
+  ]},
+  {"lemma": "نَفْس", "ref": "91:7", "arabic": "نَفْس", "translit": "nafs", "meaning": "âme ; soi-même", "kind": "noun", "note": "Pluriels : أَنْفُس anfus et نُفُوس nufūs. Désigne aussi la personne elle-même.", "senses": [
+    {"meaning": "âme", "ref": "91:7", "fr": "âme", "en": "soul"},
+    {"meaning": "personne, vie humaine", "ref": "5:32", "fr": "personne", "en": "soul"},
+    {"meaning": "soi-même", "ref": "6:12", "fr": "Lui-même", "en": "Himself"}
+  ]},
+  {"lemma": "كَفَرَ", "ref": "84:22", "arabic": "كَفَرَ", "translit": "kafara", "meaning": "il a mécru ; renier", "kind": "verb", "note": "Sens premier : couvrir, cacher. Le mécréant « couvre » la vérité ou le bienfait reçu.", "senses": [
+    {"meaning": "mécroire, rejeter la foi", "ref": "2:6", "fr": "infidèles", "en": "disbelieve"},
+    {"meaning": "être ingrat", "ref": "14:7", "fr": "ingrats", "en": "deny", "tafsir": "جحدتم نعمة الله"},
+    {"meaning": "renier, désavouer", "ref": "29:25", "fr": "rejetteront", "en": "deny one another", "tafsir": "يتبرأ بعضكم من بعض"}
+  ]},
+  {"lemma": "شَىْء", "ref": "78:29", "arabic": "شَيْء", "translit": "shayʾ", "meaning": "chose", "kind": "noun", "note": "Très fréquent dans « ʿalā kulli shayʾin qadīr » : Il est capable de toute chose.", "senses": [
+    {"meaning": "chose", "ref": "2:20", "fr": "toute chose", "en": "all things"},
+    {"meaning": "un peu de", "ref": "2:155", "fr": "un peu de peur", "en": "something of fear", "tafsir": "بشيء يسير"}
+  ]},
+  {"lemma": "جاءَ", "ref": "110:1", "arabic": "جَاءَ", "translit": "jāʾa", "meaning": "il est venu ; venir", "kind": "verb", "note": "« Idhā jāʾa naṣru-llāh » : lorsque vient le secours d'Allah (sourate An-Naṣr).", "senses": [
+    {"meaning": "venir, arriver", "ref": "110:1", "fr": "vient", "en": "has come"},
+    {"meaning": "apporter, venir avec (jāʾa bi-)", "ref": "6:160", "fr": "viendra avec", "en": "comes with"}
+  ]},
+  {"lemma": "عَمِلَ", "ref": "37:96", "arabic": "عَمِلَ", "translit": "ʿamila", "meaning": "il a œuvré ; agir, faire", "kind": "verb", "note": "Souvent associé à la foi : « ceux qui croient et accomplissent (ʿamilū) les bonnes œuvres ».", "senses": [
+    {"meaning": "agir, faire (des œuvres)", "ref": "99:7", "fr": "fait", "en": "does"},
+    {"meaning": "fabriquer, travailler pour", "ref": "34:13", "fr": "exécutaient", "en": "made"}
+  ]},
+  {"lemma": "رَأَى", "ref": "96:14", "arabic": "رَأَى", "translit": "raʾā", "meaning": "il a vu ; voir", "kind": "verb", "note": "Inaccompli : يَرَى yarā. « A-raʾayta » (as-tu vu… ?) introduit souvent une réflexion.", "senses": [
+    {"meaning": "voir (de ses yeux)", "ref": "6:76", "fr": "observa", "en": "saw"},
+    {"meaning": "voir en songe", "ref": "12:4", "fr": "vu", "en": "saw", "tafsir": "في المنام"},
+    {"meaning": "estimer, juger", "ref": "70:6", "fr": "voient", "en": "see", "tafsir": "يستبعدون العذاب", "note": "Les mécréants « voient » le châtiment lointain : ils le jugent improbable."}
+  ]},
+  {"lemma": "كِتاب", "ref": "2:2", "arabic": "كِتَاب", "translit": "kitāb", "meaning": "livre, écrit", "kind": "noun", "note": "Racine ك ت ب (écrire). « Ahl al-kitāb » : les gens du Livre.", "senses": [
+    {"meaning": "Livre révélé", "ref": "2:2", "fr": "Livre", "en": "Book"},
+    {"meaning": "lettre", "ref": "27:29", "fr": "lettre", "en": "letter"},
+    {"meaning": "registre des actes", "ref": "17:13", "fr": "écrit", "en": "record", "tafsir": "سُجِّلت فيه أعماله"},
+    {"meaning": "décret, prescription", "ref": "8:68", "fr": "prescription", "en": "decree", "tafsir": "القضاء والقدر"}
+  ]},
+  {"lemma": "حَقّ", "ref": "17:81", "arabic": "حَقّ", "translit": "ḥaqq", "meaning": "vérité ; droit", "kind": "noun", "note": "Désigne ce qui est vrai, juste et dû. Al-Ḥaqq est aussi un nom d'Allah.", "senses": [
+    {"meaning": "vérité", "ref": "17:81", "fr": "Vérité", "en": "truth"},
+    {"meaning": "droit, dû", "ref": "51:19", "fr": "droit", "en": "right"},
+    {"meaning": "la Vérité (nom d'Allah)", "ref": "22:6", "fr": "Allah est la Vérité", "en": "Allah is the Truth"}
+  ]},
+  {"lemma": "ناس", "ref": "114:1", "arabic": "نَاس", "translit": "nās", "meaning": "les gens, les hommes", "kind": "noun", "note": "Donne son nom à la dernière sourate : An-Nās. « Yā ayyuhā n-nās » : ô gens !", "senses": [
+    {"meaning": "les gens, l'humanité", "ref": "114:1", "fr": "hommes", "en": "mankind"},
+    {"meaning": "certaines personnes en particulier", "ref": "3:173", "fr": "gens", "en": "people", "tafsir": "بعض المشركين", "note": "Ici, « les gens » désigne seulement quelques polythéistes venus effrayer les croyants."}
+  ]},
+  {"lemma": "شاءَ", "ref": "81:28", "arabic": "شَاءَ", "translit": "shāʾa", "meaning": "il a voulu ; vouloir", "kind": "verb", "note": "On le retrouve dans l'expression « in shāʾa-llāh » : si Allah le veut.", "senses": [
+    {"meaning": "vouloir", "ref": "81:29", "fr": "vouloir", "en": "will"}
+  ]},
+  {"lemma": "خَلَقَ", "ref": "96:1", "arabic": "خَلَقَ", "translit": "khalaqa", "meaning": "il a créé ; créer", "kind": "verb", "note": "Le nom خَلْق khalq signifie « la création ». Al-Khāliq : le Créateur.", "senses": [
+    {"meaning": "créer", "ref": "96:1", "fr": "créé", "en": "created"},
+    {"meaning": "façonner (une forme)", "ref": "3:49", "fr": "forme", "en": "design", "tafsir": "أصنع لكم من الطين"},
+    {"meaning": "forger (un mensonge)", "ref": "29:17", "fr": "mensonge", "en": "falsehood", "tafsir": "وتفترون كذبًا"}
+  ]},
+  {"lemma": "أَنزَلَ", "ref": "97:1", "arabic": "أَنْزَلَ", "translit": "anzala", "meaning": "il a fait descendre ; révéler", "kind": "verb", "note": "Forme IV de la racine ن ز ل (descendre). Utilisé pour la révélation du Coran.", "senses": [
+    {"meaning": "faire descendre (la révélation)", "ref": "97:1", "fr": "fait descendre", "en": "sent the Qur'an down"},
+    {"meaning": "faire descendre (la pluie)", "ref": "2:22", "fr": "précipite la pluie", "en": "sent down from the sky, rain"},
+    {"meaning": "créer, accorder", "ref": "39:6", "fr": "bestiaux", "en": "livestock", "tafsir": "وخلق لكم من الأنعام", "note": "Le Tafsir Muyassar explique « Il a fait descendre » par « Il a créé pour vous »."}
+  ]},
+  {"lemma": "خَيْر", "ref": "97:3", "arabic": "خَيْر", "translit": "khayr", "meaning": "bien ; meilleur", "kind": "noun", "note": "Sert aussi de comparatif : « khayrun min » = meilleur que.", "senses": [
+    {"meaning": "bien, bonne action", "ref": "99:7", "fr": "bien", "en": "good"},
+    {"meaning": "richesse, biens", "ref": "100:8", "fr": "richesses", "en": "wealth"},
+    {"meaning": "meilleur", "ref": "97:3", "fr": "meilleure", "en": "better"}
+  ]},
+  {"lemma": "سَبِيل", "ref": "76:3", "arabic": "سَبِيل", "translit": "sabīl", "meaning": "chemin, voie", "kind": "noun", "note": "Pluriel : سُبُل subul. « Fī sabīli-llāh » : dans le sentier d'Allah.", "senses": [
+    {"meaning": "voie, chemin (d'Allah)", "ref": "2:154", "fr": "sentier", "en": "way"},
+    {"meaning": "moyen, prétexte", "ref": "4:34", "fr": "voie", "en": "means"},
+    {"meaning": "voyageur (ibn as-sabīl)", "ref": "2:177", "fr": "voyageur", "en": "traveler", "note": "Ibn as-sabīl, « le fils du chemin », est le voyageur."}
+  ]},
+  {"lemma": "دَعا", "ref": "71:8", "arabic": "دَعَا", "translit": "daʿā", "meaning": "il a appelé ; invoquer", "kind": "verb", "note": "Le nom دُعَاء duʿāʾ désigne l'invocation, la prière de demande.", "senses": [
+    {"meaning": "invoquer, appeler (Allah)", "ref": "40:60", "fr": "Appelez-Moi", "en": "Call upon Me"},
+    {"meaning": "inviter", "ref": "10:25", "fr": "appelle", "en": "invites"},
+    {"meaning": "attribuer", "ref": "19:91", "fr": "attribué", "en": "attribute", "tafsir": "لِنِسْبَتِهم له الولد"}
+  ]},
+  {"lemma": "اتَّقَى", "ref": "92:5", "arabic": "اتَّقَى", "translit": "ittaqā", "meaning": "il a craint (Allah) ; se prémunir", "kind": "verb", "note": "Forme VIII de la racine و ق ي (protéger). Même famille que تَقْوَى taqwā (piété).", "senses": [
+    {"meaning": "craindre Allah, être pieux", "ref": "92:5", "fr": "craint (Allah)", "en": "fears Allah"},
+    {"meaning": "se préserver de", "ref": "2:24", "fr": "parez-vous", "en": "fear the Fire"},
+    {"meaning": "se protéger (d'un ennemi)", "ref": "3:28", "fr": "protéger", "en": "precaution", "tafsir": "اتقاء لشرهم"}
+  ]},
+  {"lemma": "أَمْر", "ref": "26:151", "arabic": "أَمْر", "translit": "amr", "meaning": "ordre, commandement ; affaire", "kind": "noun", "note": "Pluriel : أُمُور umūr (affaires). Le verbe أَمَرَ amara signifie « ordonner ».", "senses": [
+    {"meaning": "ordre, commandement", "ref": "11:40", "fr": "commandement", "en": "command", "tafsir": "جاء أمرنا بإهلاكهم"},
+    {"meaning": "affaire", "ref": "3:159", "fr": "affaires", "en": "matter", "tafsir": "في الأمور"},
+    {"meaning": "l'Heure, le décret d'Allah", "ref": "16:1", "fr": "ordre", "en": "command", "tafsir": "قيام الساعة", "note": "Selon le Tafsir Muyassar, l'« ordre d'Allah » désigne ici l'Heure et le jugement qui approchent."}
+  ]},
+  {"lemma": "عَلِيم", "ref": "26:220", "arabic": "عَلِيم", "translit": "ʿalīm", "meaning": "Omniscient, savant", "kind": "adjective", "note": "Schème فَعِيل (faʿīl) : qualité intense et permanente. Souvent couplé à سَمِيع (Audient).", "senses": [
+    {"meaning": "Omniscient (Allah)", "ref": "2:29", "fr": "Omniscient", "en": "Knowing"},
+    {"meaning": "savant, connaisseur (un homme)", "ref": "12:55", "fr": "connaisseur", "en": "knowing", "tafsir": "ذو علم"}
+  ]},
+  {"lemma": "جَنَّة", "ref": "89:30", "arabic": "جَنَّة", "translit": "janna", "meaning": "jardin ; Paradis", "kind": "noun", "note": "Racine ج ن ن : ce qui est caché, couvert. Un jardin dont le feuillage couvre le sol.", "senses": [
+    {"meaning": "le Paradis", "ref": "89:30", "fr": "Paradis", "en": "Paradise"},
+    {"meaning": "jardin (ici-bas)", "ref": "18:35", "fr": "jardin", "en": "garden", "tafsir": "حديقته"}
+  ]},
+  {"lemma": "إِلٰه", "ref": "114:3", "arabic": "إِلَٰه", "translit": "ilāh", "meaning": "divinité", "kind": "noun", "note": "Pluriel : آلِهَة āliha. Au cœur de l'attestation « lā ilāha illā-llāh ».", "senses": [
+    {"meaning": "divinité, Dieu", "ref": "2:163", "fr": "Divinité", "en": "God"},
+    {"meaning": "objet d'adoration (faux dieu)", "ref": "25:43", "fr": "divinité", "en": "god", "tafsir": "أطاع هواه", "note": "Celui qui obéit à sa passion comme on obéit à Allah en fait sa « divinité »."}
+  ]},
+  {"lemma": "نار", "ref": "111:3", "arabic": "نَار", "translit": "nār", "meaning": "feu", "kind": "noun", "note": "Même racine que نُور nūr (lumière) : ن و ر.", "senses": [
+    {"meaning": "le Feu de l'Enfer", "ref": "2:24", "fr": "Feu", "en": "Fire"},
+    {"meaning": "feu (ordinaire)", "ref": "20:10", "fr": "feu", "en": "fire", "tafsir": "نارًا موقدة"}
+  ]},
+  {"lemma": "هَدَى", "ref": "1:6", "arabic": "هَدَى", "translit": "hadā", "meaning": "il a guidé ; guider", "kind": "verb", "note": "« Ihdinā ṣ-ṣirāṭa l-mustaqīm » : guide-nous vers le droit chemin (Al-Fātiḥa).", "senses": [
+    {"meaning": "guider (vers la foi)", "ref": "1:6", "fr": "Guide", "en": "Guide"},
+    {"meaning": "montrer, indiquer la voie", "ref": "90:10", "fr": "deux voies", "en": "two ways", "tafsir": "وبينَّا له"},
+    {"meaning": "conduire (vers l'Enfer)", "ref": "37:23", "fr": "conduisez", "en": "guide", "tafsir": "فسوقوهم"}
+  ]},
+  {"lemma": "قَلْب", "ref": "13:28", "arabic": "قَلْب", "translit": "qalb", "meaning": "cœur", "kind": "noun", "note": "Pluriel : قُلُوب qulūb. La racine ق ل ب signifie « retourner » : le cœur change d'état.", "senses": [
+    {"meaning": "cœur, siège de la compréhension", "ref": "7:179", "fr": "cœurs", "en": "hearts"},
+    {"meaning": "cœur (organe)", "ref": "33:4", "fr": "deux cœurs", "en": "two hearts", "tafsir": "من قلبين في صدره"}
+  ]},
+  {"lemma": "عَبْد", "ref": "96:10", "arabic": "عَبْد", "translit": "ʿabd", "meaning": "serviteur, adorateur", "kind": "noun", "note": "Pluriel : عِبَاد ʿibād. Base de prénoms comme ʿAbdullāh (serviteur d'Allah).", "senses": [
+    {"meaning": "serviteur d'Allah", "ref": "17:1", "fr": "serviteur", "en": "Servant", "tafsir": "بعبده محمد"},
+    {"meaning": "esclave", "ref": "2:178", "fr": "esclave", "en": "slave"}
+  ]},
+  {"lemma": "رَحِيم", "ref": "1:3", "arabic": "رَحِيم", "translit": "raḥīm", "meaning": "Très Miséricordieux", "kind": "adjective", "note": "Racine ر ح م, comme رَحْمَة (miséricorde) et رَحْمَٰن (le Tout Miséricordieux).", "senses": [
+    {"meaning": "Très Miséricordieux (Allah)", "ref": "1:3", "fr": "Très Miséricordieux", "en": "Merciful"},
+    {"meaning": "plein de compassion (le Prophète)", "ref": "9:128", "fr": "miséricordieux", "en": "merciful", "tafsir": "كثير الرأفة والرحمة"}
+  ]},
+  {"lemma": "دُنْيا", "ref": "87:16", "arabic": "دُنْيَا", "translit": "dunyā", "meaning": "ce bas monde, la vie d'ici-bas", "kind": "noun", "note": "Littéralement « la plus proche » (racine د ن و). S'oppose à الآخِرَة al-ākhira (l'au-delà).", "senses": [
+    {"meaning": "la vie d'ici-bas", "ref": "87:16", "fr": "vie présente", "en": "worldly life"},
+    {"meaning": "le plus proche (ciel)", "ref": "37:6", "fr": "le plus proche", "en": "nearest"}
+  ]},
+  {"lemma": "رَحْمَة", "ref": "21:107", "arabic": "رَحْمَة", "translit": "raḥma", "meaning": "miséricorde", "kind": "noun", "note": "Le Prophète ﷺ est décrit comme « raḥmatan lil-ʿālamīn » : une miséricorde pour l'univers.", "senses": [
+    {"meaning": "miséricorde", "ref": "21:107", "fr": "miséricorde", "en": "mercy"},
+    {"meaning": "la pluie", "ref": "7:57", "fr": "miséricorde", "en": "mercy", "tafsir": "بالمطر", "note": "Les vents annoncent la « miséricorde » d'Allah, c'est-à-dire la pluie."},
+    {"meaning": "le Paradis", "ref": "3:107", "fr": "miséricorde", "en": "mercy", "tafsir": "في جنة الله"}
+  ]},
+  {"lemma": "عَظِيم", "ref": "68:4", "arabic": "عَظِيم", "translit": "ʿaẓīm", "meaning": "immense, grandiose", "kind": "adjective", "note": "Dans l'inclinaison de la prière : « subḥāna rabbiya l-ʿaẓīm ».", "senses": [
+    {"meaning": "immense, éminent", "ref": "68:4", "fr": "éminente", "en": "great"},
+    {"meaning": "le Très Grand (Allah)", "ref": "2:255", "fr": "Très Grand", "en": "Most Great"}
+  ]},
+  {"lemma": "عِلْم", "ref": "102:5", "arabic": "عِلْم", "translit": "ʿilm", "meaning": "science, savoir", "kind": "noun", "note": "Nom verbal de عَلِمَ (savoir). « Rabbi zidnī ʿilmā » : Seigneur, accroît ma science (20:114).", "senses": [
+    {"meaning": "savoir, connaissance", "ref": "20:114", "fr": "connaissances", "en": "knowledge"},
+    {"meaning": "la révélation", "ref": "2:120", "fr": "science", "en": "knowledge", "tafsir": "من الوحي", "note": "La « science » reçue par le Prophète est ici la révélation."}
+  ]},
+  {"lemma": "أَجْر", "ref": "68:3", "arabic": "أَجْر", "translit": "ajr", "meaning": "récompense, salaire", "kind": "noun", "note": "Désigne la rétribution méritée pour une œuvre.", "senses": [
+    {"meaning": "récompense (d'Allah)", "ref": "68:3", "fr": "récompense", "en": "reward"},
+    {"meaning": "salaire", "ref": "26:109", "fr": "salaire", "en": "payment"},
+    {"meaning": "dot (mahr)", "ref": "4:24", "fr": "mahr", "en": "due compensation", "tafsir": "مهورهن"}
+  ]},
+  {"lemma": "دِين", "ref": "109:6", "arabic": "دِين", "translit": "dīn", "meaning": "religion ; Rétribution", "kind": "noun", "note": "Dans « yawm ad-dīn », il signifie « Jugement, Rétribution ».", "senses": [
+    {"meaning": "religion", "ref": "3:19", "fr": "religion", "en": "religion"},
+    {"meaning": "rétribution, jugement", "ref": "1:4", "fr": "Rétribution", "en": "Recompense"},
+    {"meaning": "culte, adoration", "ref": "98:5", "fr": "culte", "en": "religion", "tafsir": "بعبادتهم"},
+    {"meaning": "loi, justice (d'un roi)", "ref": "12:76", "fr": "justice du roi", "en": "king", "tafsir": "حكم مَلِك", "note": "Le « dīn du roi » est la loi d'Égypte."}
+  ]},
+  {"lemma": "غَفُور", "ref": "85:14", "arabic": "غَفُور", "translit": "ghafūr", "meaning": "Pardonneur", "kind": "adjective", "note": "Racine غ ف ر : couvrir, protéger. Souvent suivi de رَحِيم : « Ghafūrun Raḥīm ».", "senses": [
+    {"meaning": "Pardonneur (Allah)", "ref": "85:14", "fr": "Pardonneur", "en": "Forgiving"}
+  ]},
+  {"lemma": "شَيْطان", "ref": "81:25", "arabic": "شَيْطَان", "translit": "shayṭān", "meaning": "diable, Satan", "kind": "noun", "note": "Pluriel : شَيَاطِين shayāṭīn. « Ash-shayṭān ar-rajīm » : le diable banni.", "senses": [
+    {"meaning": "Satan, démon", "ref": "2:36", "fr": "Satan", "en": "Satan"},
+    {"meaning": "meneurs mécréants (démons humains)", "ref": "2:14", "fr": "diables", "en": "evil ones", "tafsir": "زعمائهم", "note": "Les « diables » des hypocrites sont leurs chefs mécréants."}
+  ]},
+  {"lemma": "هُدًى", "ref": "27:77", "arabic": "هُدًى", "translit": "hudā", "meaning": "guidée, bonne direction", "kind": "noun", "note": "Nom de la racine ه د ي, comme le verbe هَدَى (guider). Le Coran est « hudan lil-muttaqīn ».", "senses": [
+    {"meaning": "bonne direction", "ref": "2:5", "fr": "bon chemin", "en": "guidance"},
+    {"meaning": "guide (le Coran)", "ref": "2:2", "fr": "guide", "en": "guidance"},
+    {"meaning": "la Torah", "ref": "40:53", "fr": "guidée", "en": "guidance", "tafsir": "التوراة"}
+  ]},
+  {"lemma": "صَلاة", "ref": "23:2", "arabic": "صَلَاة", "translit": "ṣalāh", "meaning": "prière (rituelle)", "kind": "noun", "note": "Dans l'écriture coranique (rasm ʿuthmānī), il s'écrit souvent صَلَوٰة, avec un wāw.", "senses": [
+    {"meaning": "prière rituelle", "ref": "2:43", "fr": "Salât", "en": "prayer"},
+    {"meaning": "bénédiction d'Allah", "ref": "2:157", "fr": "bénédictions", "en": "blessings"},
+    {"meaning": "invocation", "ref": "9:103", "fr": "prière", "en": "invocations", "tafsir": "وادع لهم"},
+    {"meaning": "lieux de prière", "ref": "22:40", "fr": "synagogues", "en": "synagogues", "tafsir": "أماكن العبا"}
+  ]},
+  {"lemma": "لَيْل", "ref": "93:2", "arabic": "لَيْل", "translit": "layl", "meaning": "nuit", "kind": "noun", "note": "Nom d'unité : لَيْلَة layla (une nuit), comme dans « laylat al-qadr ».", "senses": [
+    {"meaning": "nuit", "ref": "93:2", "fr": "nuit", "en": "night"}
+  ]},
+  {"lemma": "نَهار", "ref": "91:3", "arabic": "نَهَار", "translit": "nahār", "meaning": "jour (le temps diurne)", "kind": "noun", "note": "S'oppose à لَيْل (nuit). يَوْم désigne plutôt le jour comme unité de temps.", "senses": [
+    {"meaning": "jour (le temps de clarté)", "ref": "91:3", "fr": "jour", "en": "day"}
+  ]},
+  {"lemma": "حَياة", "ref": "89:24", "arabic": "حَيَاة", "translit": "ḥayāh", "meaning": "vie", "kind": "noun", "note": "Dans l'écriture coranique, il s'écrit souvent حَيَوٰة. « Al-ḥayāt ad-dunyā » : la vie d'ici-bas.", "senses": [
+    {"meaning": "vie", "ref": "67:2", "fr": "vie", "en": "life"},
+    {"meaning": "préservation de la vie", "ref": "2:179", "fr": "vie", "en": "life", "tafsir": "حياة آمنة", "note": "La loi du talion protège la vie en dissuadant de tuer."}
+  ]},
+  {"lemma": "ذِكْر", "ref": "15:9", "arabic": "ذِكْر", "translit": "dhikr", "meaning": "rappel ; évocation", "kind": "noun", "note": "Désigne aussi le Coran lui-même, « le Rappel », et l'évocation d'Allah.", "senses": [
+    {"meaning": "rappel, évocation d'Allah", "ref": "29:45", "fr": "rappel", "en": "remembrance"},
+    {"meaning": "le Coran", "ref": "15:9", "fr": "Coran", "en": "Qur'an"},
+    {"meaning": "renommée", "ref": "94:4", "fr": "renommée", "en": "repute"},
+    {"meaning": "les Écritures antérieures", "ref": "21:7", "fr": "érudits du Livre", "en": "people of the message", "tafsir": "بالكتب المنزلة السابقة"}
+  ]},
+  {"lemma": "نَبِيّ", "ref": "37:112", "arabic": "نَبِيّ", "translit": "nabiyy", "meaning": "prophète", "kind": "noun", "note": "Racine ن ب أ : annoncer une nouvelle. Pluriels : أَنْبِيَاء anbiyāʾ et نَبِيُّون nabiyyūn.", "senses": [
+    {"meaning": "prophète", "ref": "37:112", "fr": "prophète", "en": "prophet"}
+  ]},
+  {"lemma": "إِنسان", "ref": "103:2", "arabic": "إِنْسَان", "translit": "insān", "meaning": "être humain", "kind": "noun", "note": "Racine أ ن س (familiarité), comme نَاس (les gens).", "senses": [
+    {"meaning": "l'être humain", "ref": "103:2", "fr": "homme", "en": "mankind"}
+  ]},
+  {"lemma": "قُرْءان", "ref": "54:17", "arabic": "قُرْآن", "translit": "Qurʾān", "meaning": "Coran ; lecture, récitation", "kind": "proper", "note": "Nom verbal de قَرَأَ qaraʾa (lire, réciter). Le premier mot révélé est اقْرَأْ : « Lis ! ».", "senses": [
+    {"meaning": "le Coran", "ref": "54:17", "fr": "Coran", "en": "Qur'an"},
+    {"meaning": "récitation, lecture", "ref": "17:78", "fr": "Lecture", "en": "recitation", "tafsir": "وأَطِلِ القراءة فيها", "note": "« Qurʾān al-fajr » : la longue récitation de la prière de l'aube."}
+  ]},
+  {"lemma": "قِيامَة", "ref": "75:1", "arabic": "قِيَامَة", "translit": "qiyāma", "meaning": "Résurrection", "kind": "noun", "note": "Racine ق و م (se lever) : le jour où les gens se lèveront. Yawm al-qiyāma.", "senses": [
+    {"meaning": "la Résurrection", "ref": "75:1", "fr": "Résurrection", "en": "Resurrection"}
+  ]},
+  {"lemma": "ماء", "ref": "80:25", "arabic": "مَاء", "translit": "māʾ", "meaning": "eau", "kind": "noun", "note": "« Et Nous avons fait, à partir de l'eau, toute chose vivante » (21:30).", "senses": [
+    {"meaning": "eau", "ref": "80:25", "fr": "eau", "en": "water"},
+    {"meaning": "liquide séminal", "ref": "86:6", "fr": "giclée d'eau", "en": "fluid"}
+  ]},
+  {"lemma": "سَمِعَ", "ref": "36:25", "arabic": "سَمِعَ", "translit": "samiʿa", "meaning": "il a entendu ; entendre", "kind": "verb", "note": "« Samiʿnā wa aṭaʿnā » : nous avons entendu et nous avons obéi. As-Samīʿ : l'Audient.", "senses": [
+    {"meaning": "entendre", "ref": "58:1", "fr": "entendu", "en": "heard"},
+    {"meaning": "écouter et obéir", "ref": "2:285", "fr": "entendu et obéi", "en": "hear and we obey"}
+  ]},
+  {"lemma": "صَبَرَ", "ref": "76:12", "arabic": "صَبَرَ", "translit": "ṣabara", "meaning": "il a patienté ; être patient", "kind": "verb", "note": "Le nom صَبْر ṣabr (patience, endurance) est une vertu centrale du Coran.", "senses": [
+    {"meaning": "être patient, endurer", "ref": "76:12", "fr": "endur", "en": "patient"},
+    {"meaning": "supporter (quelque chose de pénible)", "ref": "18:68", "fr": "endurer", "en": "patience", "tafsir": "الصبر"}
+  ]},
+  {"lemma": "رَحْمٰن", "ref": "55:1", "arabic": "رَحْمَٰن", "translit": "raḥmān", "meaning": "le Tout Miséricordieux", "kind": "adjective", "note": "Schème فَعْلَان (faʿlān) : une miséricorde débordante. Donne son nom à la sourate Ar-Raḥmān.", "senses": [
+    {"meaning": "le Tout Miséricordieux (Allah)", "ref": "55:1", "fr": "Miséricordieux", "en": "Merciful"}
+  ]},
+  {"lemma": "كُلّ", "ref": "55:26", "arabic": "كُلّ", "translit": "kull", "meaning": "tout, chaque", "kind": "noun", "note": "Suivi d'un nom indéfini : « kullu nafsin » = chaque âme ; d'un défini : la totalité.", "senses": [
+    {"meaning": "chaque, tout", "ref": "55:26", "fr": "Tout", "en": "Every"}
+  ]}
+]

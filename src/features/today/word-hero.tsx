@@ -3,6 +3,7 @@ import { CalendarDaysIcon, HashIcon, TimerIcon } from 'lucide-react'
 import { ArabicText } from '@/components/arabic-text'
 import { AudioButton } from '@/components/audio-button'
 import { Countdown } from '@/components/countdown'
+import { ShareButton } from '@/components/share-button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { wordAudioUrl } from '@/lib/audio'
@@ -59,14 +60,19 @@ export function WordHero({ word, date, total }: WordHeroProps) {
           </Badge>
         </div>
 
-        <AudioButton
-          url={wordAudioUrl(word.pronunciation)}
-          label={`Écouter la prononciation de ${word.transliteration}`}
-          variant="outline"
-          size="lg"
-        >
-          Écouter la prononciation
-        </AudioButton>
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <AudioButton
+            url={wordAudioUrl(word.pronunciation)}
+            label={`Écouter la prononciation de ${word.transliteration}`}
+            variant="outline"
+            size="lg"
+          >
+            Écouter la prononciation
+          </AudioButton>
+          <ShareButton word={word} variant="outline" size="lg">
+            Partager
+          </ShareButton>
+        </div>
       </CardContent>
     </Card>
   )

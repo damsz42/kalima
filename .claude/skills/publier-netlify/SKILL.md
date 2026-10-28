@@ -22,4 +22,5 @@ Dans Git Bash, commencer chaque commande par `export PATH="/c/Program Files/node
    ```
    Si le site n'existe pas encore (première fois, erreur « not found »), le créer en publiant avec `--site-name kalima-damsz42` à la place de `--site kalima-damsz42`. Si le nom est déjà pris par quelqu'un d'autre, choisir un autre nom, et mettre à jour ce fichier avec le nouveau nom.
 5. Copier aussi `dist/` vers `C:\Users\adams\Desktop\kalima-netlify` (en remplaçant l'ancien contenu), pour garder une version prête pour un glisser-déposer manuel sur https://app.netlify.com/drop.
-6. Donner à Adam l'adresse du site en ligne, en français.
+6. Vérifier que le site est public avec `curl -s -o /dev/null -w "%{http_code}" https://kalima-damsz42.netlify.app/`. Un `401` veut dire que le projet est privé ou protégé par mot de passe : Adam doit le rendre public dans https://app.netlify.com/projects/kalima-damsz42/configuration/general (_Visitor access_).
+7. Donner à Adam l'adresse du site en ligne, en français.

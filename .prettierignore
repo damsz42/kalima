@@ -1,0 +1,5 @@
+# Code généré : ne pas reformater
+src/components/ui/
+src/data/words.ts
+dist/
+package-lock.json

@@ -13,6 +13,8 @@ npm run dev                        # Vite dev server, http://localhost:5173
 npm run build                      # tsc -b && vite build
 npm run lint                       # ESLint
 npm test                           # Vitest, single run (src/**/*.test.ts)
+npm run test:watch                 # Vitest in watch mode
+npm run preview                    # serve the production build from dist/
 npx vitest run src/lib/date.test.ts          # one test file
 npx vitest run -t "computeStreak"            # tests whose name matches
 npm run generate:words             # regenerate src/data/words.ts
@@ -29,20 +31,24 @@ On this machine, Node is installed at `C:\Program Files\nodejs`, and shells star
 - The site lives in a subfolder, so `vite.config.ts` sets `base: './'`. Root-absolute paths in `index.html` (`/favicon.svg`…) are rewritten by Vite at build time, but paths in app code are not: reference public assets through `import.meta.env.BASE_URL` or imports, never a hard-coded `/…`.
 - The app is installable on iPhone via Safari's "Sur l'écran d'accueil": `index.html` holds the `apple-mobile-web-app-*` meta tags and `public/manifest.webmanifest`. iOS ignores SVG icons, hence `public/apple-touch-icon.png` (180×180). There is no service worker, so the app needs a connection.
 - Progress stays per browser (`localStorage`): the PC and the iPhone do not share a streak.
+- The app is also published on Netlify at https://kalima-damsz42.netlify.app, only when the user asks, never automatically. The `publier-netlify` skill (`.claude/skills/publier-netlify/SKILL.md`) does it with Netlify CLI: tests, build, `netlify deploy --prod --no-build --dir=dist --site kalima-damsz42`, then a check that the site answers 200 (a 401 means Netlify visitor access protection is on). The Netlify login exists on the PC only, and `.netlify/` is gitignored.
 
 ## Architecture
 
 **Daily word selection** (`src/lib/daily-word.ts` and `src/lib/date.ts`):
+
 - The index is the number of local calendar days since `2026-01-01`, modulo `WORDS.length`. It is computed via `Date.UTC` on local date parts, so it is safe across DST changes.
 - `WORDS` is sorted by frequency, so day 0 shows the most frequent word.
 - `useToday` re-renders at local midnight and when the tab becomes visible again.
 - Dates move around as `AAAA-MM-JJ` string keys (`toDateKey`, `addDays`). They compare lexicographically.
 
 **Word data is generated. Never hand-edit `src/data/words.ts`.** To change words:
+
 1. Edit `scripts/curated-words.json`. Each entry holds a corpus lemma string, a verse `ref` containing that lemma, the French meaning, transliteration, `kind`, note, and `senses`.
 2. Run `npm run generate:words`.
 
 What the generator (`scripts/generate-words.mjs`) does:
+
 - Downloads its sources, cached in `node_modules/.cache/kalima/`:
   - the Quranic Arabic Corpus morphology, in its corrected mustafa0x/quran-morphology version;
   - the Hamidullah French and Saheeh International English translations from api.alquran.cloud;
@@ -59,12 +65,14 @@ What the generator (`scripts/generate-words.mjs`) does:
   - Never add a sense without a verse that passes these checks.
 
 Two details are non-obvious:
+
 - Lemmas are compared after NFC normalization, because shadda and vowel ordering differ between sources.
 - Words containing the lemma `إِذ` (compounds like يَوْمَئِذٍ) are excluded from all counts. This makes the numbers match corpus.quran.com (e.g. يَوْم = 405).
 
 `src/data/words.test.ts` checks data integrity.
 
 **Pure logic lives in `src/lib/`** and is unit-tested:
+
 - `leitner.ts`: boxes with intervals 1/2/4/7/15/30 days.
 - `progress.ts`: `progressReducer` with the actions `introduce` / `complete-activity` / `review` / `reset`, plus `computeStreak` and `isProgressState`, which validates stored JSON.
 - `quiz.ts`: `buildChoices` (deduplicates options by a key, tries `priority` candidates first) and the question builders described under Activities.
@@ -73,6 +81,7 @@ Two details are non-obvious:
 **Progress state** is a React context in `src/features/progress/`, split into three files: context, provider and `useProgress` hook. The split satisfies the `react-refresh/only-export-components` rule. `App` dispatches `introduce` for today's word, so the word enters review from the next day. `ReviewPanel` excludes the current word.
 
 **Activities** (`src/features/activities/`):
+
 - Each activity is a component taking `ActivityProps` (`word`, `seed`, `onComplete`, `onRetry`).
 - `QuizRunner` (`quiz-runner.tsx`) runs a series of `QuizQuestion`s, a union discriminated by `kind`. It shows a correction after each answer and a summary at the end. Adding a question kind means updating the union in `lib/quiz.ts`, `ARABIC_CHOICE_KINDS` if its options are Arabic, and the `switch` statements and `KIND_LABELS` in `quiz-runner.tsx`.
 - The questions come from the pure builders in `lib/quiz.ts`:
@@ -87,6 +96,7 @@ Two details are non-obvious:
 - Radix `TabsContent` unmounts inactive tabs, so switching tabs resets an in-progress activity.
 
 **Audio** comes from external CDNs and is derived from verse coordinates in `src/lib/audio.ts`:
+
 - Word-by-word audio from `audio.qurancdn.com/wbw/SSS_AAA_WWW.mp3`. `WWW` is `wordIndex + 1`, and the corpus word numbering matches quran.com's. `word.pronunciation` (the hero button and the quiz pronunciation question) is played through `wordAudioUrl` directly. A word inside a verse is played with `{ ...example, wordIndex: example.targetIndex }`.
 - Full-verse audio from `cdn.islamic.network`, using `globalAyah`.
 
@@ -99,6 +109,7 @@ Two details are non-obvious:
   - Render verses with `VerseText` and their translations with `TranslationText` (`src/components/verse-text.tsx`). `VerseText` highlights the target word or replaces it with a blank. `TranslationText` emphasizes or masks a `highlight` passage.
   - Mixed strings like « ص - ل - و » can display in reverse depending on the surrounding bidi context. Render root letters as separate spans in an RTL flex box (`RootText` in `quiz-runner.tsx`, letters in `root-card.tsx`).
 - **Theme.** Fonts and color tokens are defined in `src/index.css`: `--font-arabic`, `--font-quran`, and a teal `--primary` in both light and dark.
+- **Formatting.** `.prettierrc.json`: no semicolons, single quotes, `printWidth` 100. `.prettierignore` excludes generated code (`src/components/ui/`, `src/data/words.ts`). Prettier is not a dependency and there is no format script.
 - **Path alias.** `@/` maps to `src/`. It is configured in `vite.config.ts` (`import.meta.dirname`) and in both tsconfig files, using `paths` without `baseUrl`, which is deprecated in TS 6.
 - **Generated UI components.** `src/components/ui/` contains shadcn-generated code. ESLint's fast-refresh rule is disabled there. Prefer regenerating with the shadcn CLI over editing these files by hand.
 - **Known dev-only warning.** The console shows "Encountered a script tag while rendering React component". It comes from `next-themes` under React 19, which `ThemeProvider` and the shadcn `sonner` toaster use. It is harmless.

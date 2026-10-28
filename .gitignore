@@ -26,3 +26,6 @@ dist-ssr
 # Réglages locaux de Claude Code
 .claude/settings.local.json
 .claude/hooks/
+
+# Lien local vers le site Netlify (créé par Netlify CLI)
+.netlify

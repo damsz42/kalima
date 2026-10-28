@@ -1,4 +1,5 @@
 import { WORDS } from '@/data/words'
+import type { LeitnerCard } from '@/lib/leitner'
 import type { QuranWord, VerseExample, WordKind } from '@/types/word'
 
 export const KIND_LABELS: Record<WordKind, string> = {
@@ -23,6 +24,16 @@ export function getRootSiblings(word: QuranWord): QuranWord[] {
 
 export function getWordById(id: string): QuranWord | undefined {
   return WORDS.find((word) => word.id === id)
+}
+
+/** Mots déjà vus avec leur carte de révision, du plus fréquent au moins fréquent. */
+export function getSeenWords(
+  cards: Record<string, LeitnerCard>,
+): { word: QuranWord; card: LeitnerCard }[] {
+  return WORDS.flatMap((word) => {
+    const card = cards[word.id]
+    return card ? [{ word, card }] : []
+  })
 }
 
 export function formatVerseRef(example: Pick<VerseExample, 'surah' | 'ayah'>): string {

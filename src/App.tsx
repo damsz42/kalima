@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/site-footer'
 import { SiteHeader } from '@/components/site-header'
 import { WORDS } from '@/data/words'
 import { ActivitiesPanel } from '@/features/activities/activities-panel'
+import { LexiconPanel } from '@/features/lexicon/lexicon-panel'
 import { ProgressPanel } from '@/features/progress/progress-panel'
 import { useProgress } from '@/features/progress/use-progress'
 import { ReviewPanel } from '@/features/review/review-panel'
@@ -40,6 +41,7 @@ export default function App() {
           <ReviewPanel today={today} currentWordId={word.id} />
           <ProgressPanel today={today} />
         </div>
+        <LexiconPanel />
       </main>
       <SiteFooter />
     </div>

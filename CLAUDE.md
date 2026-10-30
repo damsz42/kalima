@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Kalima (كَلِمَة) teaches one of the most frequent Quranic Arabic words each day. It is a client-only app built with Vite, React 19, TypeScript 6, Tailwind CSS v4 and shadcn/ui (style `radix-nova`). There is no backend: progress is stored in `localStorage` under `kalima:progress`. All UI text, comments and test names are in **French**, and new code should be too.
+Kalima (كَلِمَة) teaches one of the most frequent Quranic Arabic words each day. It is a static app built with Vite, React 19, TypeScript 6, Tailwind CSS v4 and shadcn/ui (style `radix-nova`). Progress is stored in `localStorage` under `kalima:progress`. An optional Google account (Supabase) syncs it across devices; see "Account and sync". All UI text, comments and test names are in **French**, and new code should be too.
 
 ## Commands
 
@@ -30,7 +30,7 @@ On this machine, Node is installed at `C:\Program Files\nodejs`, and shells star
 - Every push to `main` runs `.github/workflows/deploy.yml`: `npm ci`, `npm test`, `npm run build`, then publishes `dist/` to GitHub Pages at https://damsz42.github.io/kalima/. A failing test blocks the deploy.
 - The site lives in a subfolder, so `vite.config.ts` sets `base: './'`. Root-absolute paths in `index.html` (`/favicon.svg`…) are rewritten by Vite at build time, but paths in app code are not: reference public assets through `import.meta.env.BASE_URL` or imports, never a hard-coded `/…`.
 - The app is installable on iPhone via Safari's "Sur l'écran d'accueil": `index.html` holds the `apple-mobile-web-app-*` meta tags and `public/manifest.webmanifest`. iOS ignores SVG icons, hence `public/apple-touch-icon.png` (180×180). There is no service worker, so the app needs a connection.
-- Progress stays per browser (`localStorage`): the PC and the iPhone do not share a streak.
+- Without an account, progress stays per browser (`localStorage`). Signing in with Google shares it across devices and across both sites.
 - The app is also published on Netlify at https://kalima-damsz42.netlify.app, only when the user asks, never automatically. The `publier-netlify` skill (`.claude/skills/publier-netlify/SKILL.md`) does it with Netlify CLI: tests, build, `netlify deploy --prod --no-build --dir=dist --site kalima-damsz42`, then a check that the site answers 200 (a 401 means Netlify visitor access protection is on). The Netlify login exists on the PC only, and `.netlify/` is gitignored.
 
 ## Architecture
@@ -94,6 +94,15 @@ Two details are non-obvious:
   - It remounts the activity with `key={attempt}`.
   - It passes `seed = "${today}:${activityId}:${attempt}"`, so quiz options stay stable within a day but change on retry.
 - Radix `TabsContent` unmounts inactive tabs, so switching tabs resets an in-progress activity.
+
+**Account and sync** (`src/lib/supabase.ts`, `src/features/account/`):
+
+- Supabase project `fotaspvzhgrzhoaoqzrh` (EU). The URL and publishable key are public and live in `lib/supabase.ts`. The table `progress` (one JSON row per user, RLS) and the `delete_user()` function are defined in `supabase/schema.sql`, run by hand in the dashboard SQL Editor.
+- Sign-in is Google only, with `flowType: 'implicit'`: PKCE stores a verifier before the redirect, which breaks when the iPhone home-screen app and Safari do not share storage. Google's authorized redirect URI is the Supabase callback; the site URLs are allowed in Supabase's URL Configuration.
+- The account is optional. `AccountSection` (in the progress card) shows sign-in, sync status, sign-out and account deletion. Signing out or deleting the account keeps the local progress.
+- `useSync` fetches the remote copy, merges it with `mergeProgress`, then writes whichever side changed (`replace` action locally, upsert remotely). It runs 2 s after each change, when the tab becomes visible and when the connection returns.
+- `mergeProgress` unions activity days and keeps, per word, the most recently reviewed card. `reset` stamps `resetAt`; a newer `resetAt` wins over the other side entirely, so a reset applies to every device. Results are key-sorted so `sameProgress` can compare them.
+- `public/confidentialite.html` is the privacy page required by Google's OAuth consent screen.
 
 **Audio** comes from external CDNs and is derived from verse coordinates in `src/lib/audio.ts`:
 

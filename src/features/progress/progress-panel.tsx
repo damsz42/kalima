@@ -26,8 +26,11 @@ export function ProgressPanel({ today }: { today: string }) {
   const totalDays = Object.values(state.activityLog).filter((list) => list.length > 0).length
 
   const reset = () => {
-    if (window.confirm('Effacer toute ta progression ? Cette action est irréversible.')) {
-      dispatch({ type: 'reset' })
+    const message =
+      'Effacer toute ta progression ? Si tu es connecté, elle sera effacée sur tous tes ' +
+      'appareils. Cette action est irréversible.'
+    if (window.confirm(message)) {
+      dispatch({ type: 'reset', at: new Date().toISOString() })
     }
   }
 

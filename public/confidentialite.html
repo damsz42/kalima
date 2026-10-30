@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>Kalima — Confidentialité</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --fond: #ffffff;
+        --texte: #1f2937;
+        --discret: #6b7280;
+        --primaire: #0f766e;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fond: #0b1120;
+          --texte: #e5e7eb;
+          --discret: #9ca3af;
+          --primaire: #2dd4bf;
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--fond);
+        color: var(--texte);
+        font:
+          16px/1.6 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+      h1 {
+        color: var(--primaire);
+      }
+      a {
+        color: var(--primaire);
+      }
+      .discret {
+        color: var(--discret);
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Confidentialité</h1>
+      <p class="discret">Dernière mise à jour : 30 octobre 2026</p>
+
+      <h2>Sans compte</h2>
+      <p>
+        Kalima fonctionne sans compte. Ta progression (mots vus, révisions, série de jours) est
+        alors enregistrée uniquement dans ton navigateur. Rien n'est envoyé sur Internet.
+      </p>
+
+      <h2>Avec un compte Google</h2>
+      <p>
+        Si tu te connectes avec Google pour synchroniser ta progression entre tes appareils, Kalima
+        enregistre uniquement :
+      </p>
+      <ul>
+        <li>ton adresse e-mail, fournie par Google, pour reconnaître ton compte ;</li>
+        <li>ta progression dans Kalima.</li>
+      </ul>
+      <p>
+        Ces données sont stockées chez <a href="https://supabase.com">Supabase</a>, sur des serveurs
+        situés dans l'Union européenne. Elles ne servent qu'à faire fonctionner la synchronisation :
+        pas de publicité, pas de revente, pas de partage avec d'autres services.
+      </p>
+
+      <h2>Supprimer tes données</h2>
+      <p>
+        Le bouton « Supprimer mon compte », dans la carte « Ta progression », efface ton compte et
+        toute ta progression en ligne. Tu peux aussi te déconnecter à tout moment.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Pour toute question, ouvre un ticket sur
+        <a href="https://github.com/damsz42/kalima/issues">la page GitHub du projet</a>.
+      </p>
+
+      <p><a href="./">← Retour à Kalima</a></p>
+    </main>
+  </body>
+</html>

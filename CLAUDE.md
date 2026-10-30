@@ -74,11 +74,12 @@ Two details are non-obvious:
 **Pure logic lives in `src/lib/`** and is unit-tested:
 
 - `leitner.ts`: boxes with intervals 1/2/4/7/15/30 days.
-- `progress.ts`: `progressReducer` with the actions `introduce` / `complete-activity` / `review` / `reset`, plus `computeStreak` and `isProgressState`, which validates stored JSON.
+- `progress.ts`: `progressReducer` with the actions `introduce` / `complete-activity` / `review` / `reset` / `replace`, plus `computeStreak`, `isProgressState` (validates stored or remote JSON), and `mergeProgress` / `sameProgress` for sync.
+- `words.ts`: lookups on `WORDS`, including `getSeenWords` (words with a Leitner card, in frequency order) for the « Mes mots » card (`features/lexicon/`).
 - `quiz.ts`: `buildChoices` (deduplicates options by a key, tries `priority` candidates first) and the question builders described under Activities.
 - `random.ts`: seeded mulberry32, `shuffle` and `sample`.
 
-**Progress state** is a React context in `src/features/progress/`, split into three files: context, provider and `useProgress` hook. The split satisfies the `react-refresh/only-export-components` rule. `App` dispatches `introduce` for today's word, so the word enters review from the next day. `ReviewPanel` excludes the current word.
+**Progress state** is a React context in `src/features/progress/`, split into three files: context, provider and `useProgress` hook. The split satisfies the `react-refresh/only-export-components` rule. `App` dispatches `introduce` for today's word, so the word enters review from the next day. `ReviewPanel` excludes the current word. Its « Je savais » / « À revoir » buttons are the only place that moves a word between Leitner boxes (shown as « Niveau X/6 »): completing activities only fills `activityLog`, which drives the streak.
 
 **Activities** (`src/features/activities/`):
 

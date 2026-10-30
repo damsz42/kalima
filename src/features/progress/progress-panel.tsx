@@ -3,6 +3,7 @@ import { AwardIcon, FlameIcon, LibraryIcon, TrophyIcon, type LucideIcon } from '
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WORDS } from '@/data/words'
+import { AccountSection } from '@/features/account/account-section'
 import { isMastered } from '@/lib/leitner'
 import { computeStreak } from '@/lib/progress'
 
@@ -54,6 +55,8 @@ export function ProgressPanel({ today }: { today: string }) {
           <Stat icon={AwardIcon} label="Mots maîtrisés" value={String(mastered)} />
           <Stat icon={TrophyIcon} label="Jours d'étude" value={String(totalDays)} />
         </div>
+
+        <AccountSection />
 
         <Button variant="ghost" size="sm" className="text-muted-foreground" onClick={reset}>
           Réinitialiser la progression
